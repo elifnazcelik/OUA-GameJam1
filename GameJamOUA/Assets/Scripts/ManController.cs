@@ -1,23 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class ManController : MonoBehaviour
 {
-    public float Speed = 1.0f;
-    private Rigidbody2D rb;
+    public float speed = 1.0f;
     private Animator anim;
 
-    void Start()
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         anim.SetBool("isWalking", true);
     }
 
-
-    void Update()
+    private void Update()
     {
-        transform.Translate(Speed * Time.deltaTime,0,0);
+        transform.Translate(speed * Time.deltaTime, 0, 0);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            speed = 0;
+            anim.SetTrigger("died");
+        }
+        
+        if (other.gameObject.CompareTag("Dog"))
+        {
+            speed = 0;
+            anim.SetBool("isWalking", false);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Dog"))
+        {
+            anim.SetBool("isWalking", true);
+            speed = 1.0f;
+        }
     }
 }
