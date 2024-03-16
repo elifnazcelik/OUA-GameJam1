@@ -9,7 +9,7 @@ public class deadZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Dog") || collision.gameObject.CompareTag("Man"))
         {
             Time.timeScale = 0;
             _canvas.SetActive(true);
