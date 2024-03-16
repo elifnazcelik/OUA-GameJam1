@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 3722789787
+    locked: 0
+  - name: Dog
+    uniqueID: 3091116253
     locked: 0
