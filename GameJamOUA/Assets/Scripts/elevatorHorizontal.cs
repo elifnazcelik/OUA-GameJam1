@@ -1,30 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class elevatorHorizontal : MonoBehaviour
+public class ElevatorHorizontal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public float moveSpeed = 3f;
-    public float movementRange = 5f;
-
-
-    private Vector3 startingPosition;
+    public Transform leftPoint;
+    public Transform rightPoint;
+    public float speed = 2.0f;
+    private bool movingRight = true;
+    private float waitCounter;
+    private readonly float waitTime = 2.0f;
 
     private void Start()
     {
-        startingPosition = transform.position;
+        transform.position = leftPoint.position;
+        waitCounter = waitTime;
     }
 
-
-    void Update()
+    private void Update()
     {
-        MoveAutomatically();
-    }
-
-    void MoveAutomatically()
-    {
-        Vector3 movement = new Vector2(Mathf.PingPong(Time.time * moveSpeed, movementRange * 2) - movementRange,0f);
-        transform.position = startingPosition + movement;
+        if (movingRight)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, rightPoint.position, speed * Time.deltaTime);
+            if (transform.position == rightPoint.position)
+            {
+                if (waitCounter <= 0)
+                {
+                    movingRight = false;
+                    waitCounter = waitTime;
+                }
+                else
+                {
+                    waitCounter -= Time.deltaTime;
+                }
+            }
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, leftPoint.position, speed * Time.deltaTime);
+            if (transform.position == leftPoint.position)
+            {
+                if (waitCounter <= 0)
+                {
+                    movingRight = true;
+                    waitCounter = waitTime;
+                }
+                else
+                {
+                    waitCounter -= Time.deltaTime;
+                }
+            }
+        }
     }
 }
