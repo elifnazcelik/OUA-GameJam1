@@ -87,4 +87,12 @@ public class DogController : MonoBehaviour
             isSlopingGround = false;
         }
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            speed = 0;
+            anim.SetTrigger("died");
+        }
+    }
 }
