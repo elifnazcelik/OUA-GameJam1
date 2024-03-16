@@ -12,6 +12,7 @@ public class DogController : MonoBehaviour
     private bool isSlopingGround;
     private Vector3 offset;
     private Rigidbody2D rb;
+    [SerializeField] GameObject gameEndScreen;
 
     private void Start()
     {
@@ -93,6 +94,13 @@ public class DogController : MonoBehaviour
         {
             speed = 0;
             anim.SetTrigger("died");
+            Invoke("EndGame", 1);
         }
+    }
+    
+    private void EndGame()
+    {
+        gameEndScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 }

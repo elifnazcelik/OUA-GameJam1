@@ -9,6 +9,7 @@ TagManager:
   - Dog
   - Obstacle
   - Man
+  - MovingGround
   layers:
   - Default
   - TransparentFX
