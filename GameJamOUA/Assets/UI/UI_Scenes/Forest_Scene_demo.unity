@@ -217,11 +217,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4241235179212581587, guid: 53f64e3691d804a4fa6ec60b80de03ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.04
+      value: -37.29
       objectReference: {fileID: 0}
     - target: {fileID: 4241235179212581587, guid: 53f64e3691d804a4fa6ec60b80de03ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4183137
+      value: -3.53
       objectReference: {fileID: 0}
     - target: {fileID: 4241235179212581587, guid: 53f64e3691d804a4fa6ec60b80de03ca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -261,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421802528842015034, guid: 53f64e3691d804a4fa6ec60b80de03ca, type: 3}
       propertyPath: jumpForce
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8421802528842015034, guid: 53f64e3691d804a4fa6ec60b80de03ca, type: 3}
       propertyPath: cameraTransform
@@ -434,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 80901173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.5315, y: 0.69, z: 0}
+  m_LocalPosition: {x: 21.5315, y: 1.8, z: 0}
   m_LocalScale: {x: 3.421411, y: 3.5554929, z: 1.4099028}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -500,7 +500,7 @@ PrefabInstance:
     - target: {fileID: 7737967616841874834, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: exitPoint
       value: 
-      objectReference: {fileID: 1865604288}
+      objectReference: {fileID: 846866754}
     - target: {fileID: 8730488152555118328, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: m_Name
       value: Bird (3)
@@ -604,11 +604,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 369013646046091726, guid: 3c7356e70a1ad5f4796ea60918047492, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.89
+      value: -39.14
       objectReference: {fileID: 0}
     - target: {fileID: 369013646046091726, guid: 3c7356e70a1ad5f4796ea60918047492, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8742336
+      value: -1.9859196
       objectReference: {fileID: 0}
     - target: {fileID: 369013646046091726, guid: 3c7356e70a1ad5f4796ea60918047492, type: 3}
       propertyPath: m_LocalPosition.z
@@ -883,7 +883,7 @@ PrefabInstance:
     - target: {fileID: 7737967616841874834, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: exitPoint
       value: 
-      objectReference: {fileID: 1865604288}
+      objectReference: {fileID: 846866754}
     - target: {fileID: 8730488152555118328, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: m_Name
       value: Bird (4)
@@ -1037,7 +1037,7 @@ PrefabInstance:
     - target: {fileID: 7737967616841874834, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: exitPoint
       value: 
-      objectReference: {fileID: 1865604288}
+      objectReference: {fileID: 846866754}
     - target: {fileID: 8730488152555118328, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: m_Name
       value: Bird (7)
@@ -1610,7 +1610,7 @@ Transform:
   m_GameObject: {fileID: 453456873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.87, y: -0.85, z: 0.015224729}
+  m_LocalPosition: {x: 29.55, y: -1.18, z: 0.015224729}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2518,7 +2518,7 @@ Transform:
   m_GameObject: {fileID: 640144401}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.44, y: 0, z: -10}
+  m_LocalPosition: {x: -36.52, y: -0.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2579,7 +2579,7 @@ PrefabInstance:
     - target: {fileID: 7737967616841874834, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: exitPoint
       value: 
-      objectReference: {fileID: 1865604288}
+      objectReference: {fileID: 846866754}
     - target: {fileID: 8730488152555118328, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: m_Name
       value: Bird (5)
@@ -9552,6 +9552,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1450292626}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &846866753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 846866754}
+  m_Layer: 0
+  m_Name: birdExitPosition
+  m_TagString: BirdExitPoint
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &846866754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846866753}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.63, y: 7.1, z: -0.03815392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &872710022
 GameObject:
   m_ObjectHideFlags: 0
@@ -12442,7 +12473,7 @@ PrefabInstance:
     - target: {fileID: 7737967616841874834, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: exitPoint
       value: 
-      objectReference: {fileID: 1865604288}
+      objectReference: {fileID: 846866754}
     - target: {fileID: 8730488152555118328, guid: 5b61f5be00e61314caa8277c39776c7e, type: 3}
       propertyPath: m_Name
       value: Bird (6)
@@ -23563,3 +23594,4 @@ SceneRoots:
   - {fileID: 1175372813}
   - {fileID: 1739751983}
   - {fileID: 2015239344}
+  - {fileID: 846866754}

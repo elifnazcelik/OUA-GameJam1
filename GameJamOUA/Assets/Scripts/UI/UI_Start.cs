@@ -8,6 +8,7 @@ public class UI_Start : MonoBehaviour
 {
     public void StartGame()
     {
+        PlayerPrefs.SetFloat("Timer", 0);
         SceneManager.LoadSceneAsync("City_Scene_Demo");
     }
 }
