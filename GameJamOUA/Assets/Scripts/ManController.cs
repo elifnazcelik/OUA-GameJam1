@@ -37,7 +37,7 @@ public class ManController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MovingGround"))
         {
-            speed = 2f;
+            transform.SetParent(other.gameObject.transform);
         }
         
         if (other.gameObject.CompareTag("Bird"))
@@ -53,7 +53,7 @@ public class ManController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MovingGround"))
         {
-            speed = 1.0f;
+            transform.SetParent(null);
         }
     }
 

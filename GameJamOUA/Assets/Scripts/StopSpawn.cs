@@ -11,6 +11,7 @@ public class StopSpawn : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Dog"))
         {
+            collision.GetComponent<DogController>().jumpForce = 9f;
             spawnPoint.GetComponent<SpawnManager>().active = false;
         }
     }

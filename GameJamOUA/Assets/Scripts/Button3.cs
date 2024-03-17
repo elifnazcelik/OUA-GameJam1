@@ -10,6 +10,7 @@ public class Button3 : MonoBehaviour
     {
         if (collision.CompareTag("Dog"))
         {
+            collision.GetComponent<DogController>().jumpForce = 8f;
             swingPlatform.StopSwinging();
         }
     }
