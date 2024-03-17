@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 7281938371891440586}
   - component: {fileID: 7188684540003145508}
   m_Layer: 5
-  m_Name: PlayAgain
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -504, y: -279.99997}
+  m_AnchoredPosition: {x: -500.98, y: -279.5}
   m_SizeDelta: {x: -1644.8254, y: -928.0027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7281938371891440586
@@ -724,7 +724,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 208335324140157182}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1544695622913722649}
+        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7147851939785760331
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +798,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -952,7 +964,7 @@ GameObject:
   - component: {fileID: 5053353935564727947}
   - component: {fileID: 5590621505031324649}
   m_Layer: 5
-  m_Name: PlayAgain
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,8 +986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038147, y: -0.000011683}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.000021458, y: 0.00011444}
+  m_SizeDelta: {x: 186.8043, y: 45.0516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5651399656766422774
 CanvasRenderer:
@@ -1005,7 +1017,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 405655598, guid: 24f6d2a7b35c7fe41a1227d0b44031d3, type: 3}
+  m_Sprite: {fileID: 428332387, guid: eda6dc4fbaf0e3c4989480b7bbac8d30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1058,7 +1070,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5053353935564727947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 968636832187032441}
+        m_TargetAssemblyTypeName: Restart, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8425302186314181238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,7 +1218,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9115845501625683486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1203,8 +1227,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.0001373291}
+  m_SizeDelta: {x: 275.17, y: 76.842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &968636832187032441
 MonoBehaviour:

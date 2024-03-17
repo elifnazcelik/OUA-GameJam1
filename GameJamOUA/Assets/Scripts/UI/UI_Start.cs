@@ -8,6 +8,6 @@ public class UI_Start : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadSceneAsync("Main");
+        SceneManager.LoadSceneAsync("City_Scene_Demo");
     }
 }
