@@ -21342,6 +21342,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6932128726492596071, guid: 3e84efca4cab43c4cadaa53794bf76de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -856
+      objectReference: {fileID: 0}
+    - target: {fileID: 6932128726492596071, guid: 3e84efca4cab43c4cadaa53794bf76de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 479
+      objectReference: {fileID: 0}
     - target: {fileID: 7564070258551061678, guid: 3e84efca4cab43c4cadaa53794bf76de, type: 3}
       propertyPath: m_Name
       value: Timer
