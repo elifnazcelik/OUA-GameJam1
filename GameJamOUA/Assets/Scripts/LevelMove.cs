@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelMove : MonoBehaviour
 {
-    public int sceneBuildIndex;
+    private Scene Forest;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (other.gameObject.CompareTag("Dog")) 
+         Forest= SceneManager.GetActiveScene();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Dog")) 
         {
-            SceneManager.LoadSceneAsync("Forest_Scene_demo");
+            Debug.Log("aa");
+            SceneManager.LoadScene(Forest.buildIndex + 1);
         }
     }
 }
