@@ -37,7 +37,6 @@ public class ManController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MovingGround"))
         {
-            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             speed = 2f;
         }
         
@@ -54,7 +53,6 @@ public class ManController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MovingGround"))
         {
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             speed = 1.0f;
         }
     }
@@ -74,6 +72,7 @@ public class ManController : MonoBehaviour
             speed = 0;
             anim.SetBool("isWalking", false);
             isNearDog = true;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
     }
 
@@ -84,6 +83,7 @@ public class ManController : MonoBehaviour
             anim.SetBool("isWalking", true);
             speed = 1.0f;
             isNearDog = false;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         }
     }
     

@@ -20,6 +20,7 @@ public class DogController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
+        rb.centerOfMass = new Vector2(rb.centerOfMass.x, rb.centerOfMass.y - 0.02f);
         offset = cameraTransform.position - transform.position;
         isFacingRight = true;
     }
