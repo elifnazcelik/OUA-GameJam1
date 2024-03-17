@@ -11,9 +11,11 @@ public class ManController : MonoBehaviour
     private bool isCooldown = false;
     private bool isNearDog = false;
     public GameObject shield;
+    private Rigidbody2D rb;
 
     private void Start()
     {
+        rb= GetComponent<Rigidbody2D>();    
         anim = GetComponent<Animator>();
         anim.SetBool("isWalking", true);
     }
@@ -35,6 +37,7 @@ public class ManController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MovingGround"))
         {
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             speed = 2f;
         }
         
@@ -51,16 +54,14 @@ public class ManController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("MovingGround"))
         {
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             speed = 1.0f;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("deadzone")) 
-
         if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("deadzone"))
-
         {
             speed = 0;
             anim.SetTrigger("died");
