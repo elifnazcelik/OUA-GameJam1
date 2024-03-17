@@ -32,8 +32,7 @@ public class TimerController : MonoBehaviour
     public void BeginTimer()
     {
         timerGoing = true;
-        elapsedTime = 0f;
-
+        elapsedTime = PlayerPrefs.GetFloat("Timer", 0);
         StartCoroutine(UpdateTimer());
     }
 
@@ -47,6 +46,7 @@ public class TimerController : MonoBehaviour
         while (timerGoing)
         {
             elapsedTime += Time.deltaTime;
+            PlayerPrefs.SetFloat("Timer", elapsedTime);
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
             String timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
             timeCounter.text = timePlayingStr;
