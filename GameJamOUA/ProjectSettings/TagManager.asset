@@ -10,6 +10,9 @@ TagManager:
   - Obstacle
   - Man
   - MovingGround
+  - Bird
+  - Shield
+  - BirdExitPoint
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - Man
   - Dog
   - SwingPlatform
-  - 
+  - Shield
   - 
   - 
   - 
