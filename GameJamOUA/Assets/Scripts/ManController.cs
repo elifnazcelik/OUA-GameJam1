@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ManController : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class ManController : MonoBehaviour
             speed = 0;
             anim.SetTrigger("died");
             Invoke("EndGame", 1);
+            SceneManager.LoadSceneAsync("GameOver");
         }
     }
 
@@ -55,11 +57,12 @@ public class ManController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("deadzone"));
         {
             speed = 0;
             anim.SetTrigger("died");
             Invoke("EndGame", 1);
+            SceneManager.LoadSceneAsync("GameOver");
         }
         
         if (other.gameObject.CompareTag("Dog"))

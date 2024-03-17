@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DogController : MonoBehaviour
 {
@@ -95,6 +96,7 @@ public class DogController : MonoBehaviour
             speed = 0;
             anim.SetTrigger("died");
             Invoke("EndGame", 1);
+            SceneManager.LoadSceneAsync("GameOver");
         }
     }
     
