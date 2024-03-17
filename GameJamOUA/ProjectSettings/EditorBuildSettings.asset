@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/UI/UI_Scenes/Main.unity
     guid: d088ad5656905f54ea17f0c2702202e7
   - enabled: 1
+    path: Assets/UI/UI_Scenes/City_Scene_Demo.unity
+    guid: 0c34f5c900688924aa4793cbb39a9f4f
+  - enabled: 1
+    path: Assets/UI/UI_Scenes/Forest_Scene_demo.unity
+    guid: 46e3d209ad61aa742bbdba3e56a24f05
+  - enabled: 1
     path: Assets/UI/UI_Scenes/WellDone.unity
     guid: 7b8c3e640c74c4b45a98de1d707d457c
   - enabled: 1

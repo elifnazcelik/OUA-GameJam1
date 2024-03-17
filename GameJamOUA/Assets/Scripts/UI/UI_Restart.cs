@@ -10,6 +10,7 @@ public class Restart : MonoBehaviour
     // Restart game function
     public void RestartGame()
     {
-        SceneManager.LoadSceneAsync("Level");
+        Debug.Log("aa");
+        SceneManager.LoadSceneAsync("City_Scene_Demo");
     }
 }

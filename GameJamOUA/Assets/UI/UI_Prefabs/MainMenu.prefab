@@ -380,7 +380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 950212449460307050}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 721363731690830157}
+        m_TargetAssemblyTypeName: UI_Start, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3542506603520410712
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1923931087930907342}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8429092237737712180}
+        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4752521922888798232
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +584,7 @@ GameObject:
   - component: {fileID: 8543458481423103500}
   - component: {fileID: 8429092237737712180}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: ExitManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
