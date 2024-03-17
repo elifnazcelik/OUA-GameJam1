@@ -57,7 +57,7 @@ public class ManController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("deadzone"));
+        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("deadzone")) 
         {
             speed = 0;
             anim.SetTrigger("died");
